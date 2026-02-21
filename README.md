@@ -12,7 +12,9 @@ data-driven analysis and interactive visualizations.
 - Access Method: Kaggle Python API
 - Note: Raw dataset files are not included in this repository
 
+----
 ## Project Structure
+```
 ClimateScope/
 ├── data/
 │   ├── raw/
@@ -26,7 +28,8 @@ ClimateScope/
 ├── requirements.txt
 ├── .gitignore
 └── README.md
-
+```
+----
 ## Environment Setup (Windows)
 
 ### 1. Clone the Repository
