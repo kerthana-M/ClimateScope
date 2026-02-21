@@ -1,0 +1,13 @@
+# Python
+__pycache__/
+.ipynb_checkpoints/
+venv/
+
+# Kaggle secrets
+kaggle.json
+.kaggle/
+.env
+
+# Data files
+data/raw/
+data/processed/
