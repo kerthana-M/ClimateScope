@@ -1,10 +1,18 @@
-# ClimateScope 🌍  
+# ClimateScope 
 Visualizing Global Weather Trends and Extreme Events
 
-## Project Objective
-ClimateScope analyzes and visualizes global weather patterns using the Global Weather Repository dataset.
-The project aims to uncover seasonal trends, regional variations, and extreme weather events through
-data-driven analysis and interactive visualizations.
+## Project Overview
+ClimateScope is a data analytics and visualization project focused on exploring global weather patterns and extreme weather events using real-world, daily-updated data. The project transforms raw weather data into meaningful insights through structured preprocessing, exploratory analysis, and interactive visualizations.
+
+By leveraging the Global Weather Repository dataset, ClimateScope enables users to:
+
+- Analyze seasonal and regional weather trends
+- Compare climate conditions across countries
+- Identify anomalies and extreme weather behavior
+- Interact with data through visual dashboards
+
+## Project Objectives
+
 
 ## Dataset
 - Source: :contentReference[oaicite:0]{index=0}
@@ -16,18 +24,20 @@ data-driven analysis and interactive visualizations.
 ## Project Structure
 ```
 ClimateScope/
+│
 ├── data/
-│   ├── raw/
-│   └── processed/
+│   ├── raw/                # Original dataset (unchanged)
+│   └── processed/          # Cleaned & aggregated dataset
+│       └── weather_cleaned.csv
+│
 ├── notebooks/
 │   └── 01_data_preparation.ipynb
-├── scripts/
-│   └── download_data.py
+│
 ├── reports/
-│   └── data_summary.md
-├── requirements.txt
-├── .gitignore
-└── README.md
+│   └── milestone1_summary.md
+│
+├── README.md
+└── requirements.txt
 ```
 ----
 ## Environment Setup (Windows)
