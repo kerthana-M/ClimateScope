@@ -10,16 +10,25 @@ By leveraging the Global Weather Repository dataset, ClimateScope enables users 
 - Compare climate conditions across countries
 - Identify anomalies and extreme weather behavior
 - Interact with data through visual dashboards
-
+----
 ## Project Objectives
-
-
+- Analyze global weather patterns over time
+- Identify seasonal trends and regional variations
+- Detect extreme weather conditions
+- Present insights using interactive and intuitive visualizations
+- Build a scalable foundation for future predictive analysis
+----
 ## Dataset
-- Source: :contentReference[oaicite:0]{index=0}
-- Dataset Name: Global Weather Repository
-- Access Method: Kaggle Python API
-- Note: Raw dataset files are not included in this repository
-
+- Name: Global Weather Repository
+- Source: Kaggle
+- Records: 125,501
+- Features: 41
+- Coverage: Global
+- Update Frequency: Daily
+The dataset includes:
+	- Weather parameters (temperature, humidity, wind, precipitation, pressure)
+	- Air quality indicators (PM2.5, PM10, CO, NO₂, O₃, SO₂)
+  - Astronomical data (sunrise, sunset, moon phase)
 ----
 ## Project Structure
 ```
@@ -40,9 +49,55 @@ ClimateScope/
 └── requirements.txt
 ```
 ----
-## Environment Setup (Windows)
+## Tech Stack
+- Programming Language
+	- Python 3
+- Libraries & Tools
+	- pandas – data cleaning and transformation
+	- numpy – numerical computations
+	- matplotlib / seaborn – exploratory data analysis (EDA)
+	- Plotly – interactive visualizations
+	- Streamlit – dashboard development
+	- Kaggle API – dataset access
+----
+## Project Workflow
+### Data Acquisition
+- Dataset downloaded using Kaggle API
+- Raw data stored separately to preserve original source
+### Data Understanding & Exploration
+- Schema inspection and data type validation
+- Identification of key weather, air quality, and time-based variables
+### Data Cleaning & Preprocessing
+- Duplicate removal
+- Retention of epoch-based timestamps for temporal consistency
+- conversion of epoch time to datetime
+- unit standardization (Celsius, km/h, mm)
+- Feature selection and column renaming
+### Data Aggregation
+- Aggregation from timestamp-level data to monthly averages
+- Grouped by country, year, and month
+### Exploratory Data Analysis (EDA)
+- Temperature distribution analysis
+- Monthly temperature trend visualization
+- Precipitation distribution analysis
+- Data quality validation through visual checks
+----
+## Current Status
+Milestone 1 Completed
+#### Milestone 1 Deliverables:
+- Cleaned and processed dataset
+- Data quality validation
+- Initial EDA plots
+- Milestone 1 summary report
 
-### 1. Clone the Repository
-```bash
-git clone https://github.com/<your-username>/ClimateScope.git
-cd ClimateScope
+## Future Enhancements
+- Interactive dashboard using Streamlit
+- Choropleth maps for geographic analysis
+- Extreme weather detection and anomaly analysis
+- Predictive modeling for weather trends
+- Live API-based weather updates
+
+
+
+
+
