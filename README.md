@@ -2,7 +2,7 @@
 Visualizing Global Weather Trends and Extreme Events
 
 ## Project Overview
-ClimateScope is a data analytics and visualization project focused on exploring global weather patterns and extreme weather events using real-world, daily-updated data. The project transforms raw weather data into meaningful insights through structured preprocessing, exploratory analysis, and interactive visualizations.
+ClimateScope is a data analytics and visualization project focused on exploring global weather patterns and extreme weather events using real-world, daily-updated data. The project transforms raw weather data into meaningful insights through structured preprocessing, exploratory analysis, and interactive visualizations.The project also includes seasonal classification of weather data to analyze and visualize country-wise seasonal temperature and precipitation patterns.
 
 By leveraging the Global Weather Repository dataset, ClimateScope enables users to:
 
@@ -73,9 +73,20 @@ ClimateScope/
 - conversion of epoch time to datetime
 - unit standardization (Celsius, km/h, mm)
 - Feature selection and column renaming
+- Extracted year and month from datetime values
+- Created a new categorical feature `season` by mapping months to climatological seasons (Winter, Spring, Summer, Autumn)
 ### Data Aggregation
 - Aggregation from timestamp-level data to monthly averages
 - Grouped by country, year, and month
+## Season Identification & Analysis
+
+To support seasonal climate analysis, each monthly observation was assigned a climatological season based on its month:
+- Winter: December – February
+- Spring: March – May
+- Summer: June – August
+- Autumn: September – November
+
+This seasonal classification enables country-wise comparison of temperature and precipitation patterns across different periods of the year.
 ### Exploratory Data Analysis (EDA)
 - Temperature distribution analysis
 - Monthly temperature trend visualization
