@@ -41,7 +41,7 @@ ClimateScope/
 │
 ├── notebooks/
 │   └── 01_data_preparation.ipynb
-│
+│    
 ├── reports/
 │   └── milestone1_summary.md
 │
