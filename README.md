@@ -38,13 +38,16 @@ ClimateScope/
 │   ├── raw/                # Original dataset (unchanged)
 │   └── processed/          # Cleaned & aggregated dataset
 │       └── weather_cleaned.csv
+|		└── weather_cleaned_with_seasons.csv
 │
 ├── notebooks/
 │   └── 01_data_preparation.ipynb
-│    
+│   └── 02_analysis.ipynb
+|
 ├── reports/
-│   └── milestone1_summary.md
-│
+│   └── milestone1_summary.pdf
+│   └── milestone2_summary.pdf
+|   └── dashboard_wireframe.pdf
 ├── README.md
 └── requirements.txt
 ```
@@ -93,21 +96,73 @@ This seasonal classification enables country-wise comparison of temperature and 
 - Precipitation distribution analysis
 - Data quality validation through visual checks
 ----
-## Current Status
-Milestone 1 Completed
-#### Milestone 1 Deliverables:
-- Cleaned and processed dataset
-- Data quality validation
-- Initial EDA plots
-- Milestone 1 summary report
 
-## Future Enhancements
-- Interactive dashboard using Streamlit
-- Choropleth maps for geographic analysis
-- Extreme weather detection and anomaly analysis
-- Predictive modeling for weather trends
-- Live API-based weather updates
+## Milestone 1: Data Preprocessing
 
+Objectives achieved:
+
+- Loaded and inspected the Global Weather dataset
+- Handled missing values:
+- Numerical → column mean
+- Categorical → "Unknown"
+- Converted timestamps and extracted year/month
+- Validated data ranges and consistency
+- Saved cleaned dataset for reuse
+----
+## Milestone 2: Core Analysis & Visualization Design
+### Statistical & Seasonal Analysis
+
+- Monthly aggregation by country, year, and month
+- Seasonal classification (Winter, Spring, Summer, Autumn)
+- Analysis of:
+      - Temperature trends
+  	  -	Precipitation patterns
+	  - Wind speed and pressure relationships
+	  - Seasonal variability across regions
+
+### Exploratory Visualizations
+- Temperature distribution
+- Monthly temperature trends
+- Precipitation distribution
+- Seasonal temperature comparison (country-wise)
+- These visualizations validate data quality and reveal meaningful climate patterns.
+
+## Dashboard Wireframe Design
+
+A dashboard layout (wireframe) was designed to guide future implementation.
+
+### Planned Dashboard Sections
+
+#### Global Overview
+
+- Line chart: Global temperature trend
+- KPI cards: Avg temperature, humidity, rainfall
+
+#### Seasonal Analysis
+- Country selector (dropdown)
+- Bar chart: Seasonal temperature
+- Line chart: Seasonal precipitation
+
+#### Regional Comparison
+
+- Choropleth map: Average temperature
+- Bar chart: Wind speed by region
+
+#### Extreme Events
+
+- Scatter plot: Extreme temperature & precipitation
+- Filters: Year, country
+
+### 📄 Wireframe available at:
+
+#### reports/dashboard_wireframe.pdf
+----
+## Next Steps (Milestone 3)
+
+- Implement interactive dashboard (Plotly / Streamlit / Power BI)
+- Advanced statistical modeling
+- Extreme event detection & trend forecasting
+- Deployment and user interaction features
 
 
 
