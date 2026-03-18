@@ -44,10 +44,14 @@ ClimateScope/
 │   └── 01_data_preparation.ipynb
 │   └── 02_analysis.ipynb
 |
+├── dashboard/
+│   └── app.py
 ├── reports/
 │   └── milestone1_summary.pdf
-│   └── milestone2_summary.pdf
+|   └── milestone2_summary.pdf
+│   └── milestone3_summary.pdf
 |   └── dashboard_wireframe.pdf
+|  
 ├── README.md
 └── requirements.txt
 ```
@@ -157,13 +161,69 @@ A dashboard layout (wireframe) was designed to guide future implementation.
 
 #### reports/dashboard_wireframe.pdf
 ----
-## Next Steps (Milestone 3)
+## Milestone 3: Visualization Development & Interactivity
+Features Implemented:
+- Interactive dashboard using Streamlit
+- Dynamic filters (country, year, season)
+- Metric selection for flexible analysis
+- Multiple visualization types:
+- Line charts (trends)
+- Bar charts (seasonal patterns)
+- Choropleth maps (regional comparison)
+- Scatter plots (extreme events)
+- Heatmaps (correlation)
+- Insight annotations for each section
+----
 
-- Implement interactive dashboard (Plotly / Streamlit / Power BI)
-- Advanced statistical modeling
-- Extreme event detection & trend forecasting
-- Deployment and user interaction features
+## How to Run the Dashboard
+```
+pip install -r requirements.txt
+streamlit run dashboard/app.py
+```
+----
+## 🚀 Next Steps (Milestone 4: Finalization, Testing & Reporting)
 
+The final phase of the ClimateScope project focuses on validating, refining, and presenting the completed dashboard along with key insights.
 
+### 🔍 Testing & Validation
+- Perform comprehensive testing of the dashboard functionality
+- Verify data accuracy across all visualizations
+- Ensure filters, interactivity, and UI components work as expected
+- Improve user experience and responsiveness
 
+### 🌍 Climate Insights Summary
+- Summarize global temperature trends and seasonal variations
+- Identify regional climate differences and extreme weather patterns
+- Highlight key findings derived from the interactive dashboard
+
+### 📄 Final Report Documentation
+- Document complete project methodology
+- Explain data preprocessing and analysis techniques
+- Include dashboard screenshots and visualizations
+- Present key insights and conclusions
+
+### 🌐 Deployment (Optional)
+- Deploy the dashboard using Streamlit Cloud / Render / Heroku
+- Provide a public link for easy access and demonstration
+
+### 🔮 Future Enhancements (Optional)
+- Add machine learning models for climate prediction
+- Integrate real-time weather APIs
+- Improve UI/UX with advanced design components
+- Expand dataset for deeper analysis
+
+---
+
+### 🎯 Milestone 4 Deliverables
+- Fully functional and tested interactive dashboard
+- Final project report (PDF)
+- Clean and well-documented GitHub repository
+- (Optional) Deployed live dashboard link
+- (Optional) Demo video showcasing functionality
+
+### ✅ Success Criteria
+- Dashboard is stable, accurate, and user-friendly
+- All planned visualizations and features are implemented
+- Insights are clearly derived and explained
+- Project documentation is complete and professional
 
