@@ -46,6 +46,7 @@ ClimateScope/
 |
 ├── dashboard/
 │   └── app.py
+|
 ├── reports/
 │   └── milestone1_summary.pdf
 |   └── milestone2_summary.pdf
@@ -181,49 +182,10 @@ pip install -r requirements.txt
 streamlit run dashboard/app.py
 ```
 ----
-## 🚀 Next Steps (Milestone 4: Finalization, Testing & Reporting)
 
-The final phase of the ClimateScope project focuses on validating, refining, and presenting the completed dashboard along with key insights.
-
-### 🔍 Testing & Validation
-- Perform comprehensive testing of the dashboard functionality
-- Verify data accuracy across all visualizations
-- Ensure filters, interactivity, and UI components work as expected
-- Improve user experience and responsiveness
-
-### 🌍 Climate Insights Summary
-- Summarize global temperature trends and seasonal variations
-- Identify regional climate differences and extreme weather patterns
-- Highlight key findings derived from the interactive dashboard
-
-### 📄 Final Report Documentation
-- Document complete project methodology
-- Explain data preprocessing and analysis techniques
-- Include dashboard screenshots and visualizations
-- Present key insights and conclusions
-
-### 🌐 Deployment (Optional)
-- Deploy the dashboard using Streamlit Cloud / Render / Heroku
-- Provide a public link for easy access and demonstration
-
-### 🔮 Future Enhancements (Optional)
-- Add machine learning models for climate prediction
-- Integrate real-time weather APIs
-- Improve UI/UX with advanced design components
-- Expand dataset for deeper analysis
-
----
-
-### 🎯 Milestone 4 Deliverables
-- Fully functional and tested interactive dashboard
-- Final project report (PDF)
-- Clean and well-documented GitHub repository
-- (Optional) Deployed live dashboard link
-- (Optional) Demo video showcasing functionality
-
-### ✅ Success Criteria
-- Dashboard is stable, accurate, and user-friendly
-- All planned visualizations and features are implemented
-- Insights are clearly derived and explained
-- Project documentation is complete and professional
+## Next Steps
+- Perform final testing and optimization
+- Prepare comprehensive final report
+- Deploy dashboard (optional)
+- Add advanced features for future enhancement
 
