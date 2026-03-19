@@ -35,26 +35,34 @@ The dataset includes:
 ClimateScope/
 │
 ├── data/
-│   ├── raw/                # Original dataset (unchanged)
-│   └── processed/          # Cleaned & aggregated dataset
-│       └── weather_cleaned.csv
-|		└── weather_cleaned_with_seasons.csv
+│   ├── raw/
+│   └── processed/
+│       ├── weather_cleaned.csv
+│       └── weather_cleaned_with_seasons.csv
 │
 ├── notebooks/
-│   └── 01_data_preparation.ipynb
-│   └── 02_analysis.ipynb
-|
+│   ├── 01_data_preparation.ipynb
+│   └──  02_analysis.ipynb
+│
 ├── dashboard/
-│   └── app.py
-|
+│   └── app.py                     ✅ Interactive Streamlit dashboard
+│
 ├── reports/
-│   └── milestone1_summary.pdf
-|   └── milestone2_summary.pdf
-│   └── milestone3_summary.pdf
-|   └── dashboard_wireframe.pdf
-|  
-├── README.md
-└── requirements.txt
+│   ├── milestone1_summary.pdf
+│   ├── milestone2_summary.pdf
+│   ├── milestone3_summary.pdf     
+│   ├── dashboard_wireframe.pdf
+│   │
+│   └── images/                   
+│       ├── dashboard_overview.png
+│       ├── trends.png
+│       ├── seasonal.png
+│       └── extremes.png
+│
+├── README.md                     
+├── requirements.txt             
+└──  .gitignore
+
 ```
 ----
 ## Tech Stack
