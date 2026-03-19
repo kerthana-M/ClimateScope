@@ -57,7 +57,8 @@ ClimateScope/
 │       ├── dashboard_overview.png
 │       ├── trends.png
 │       ├── seasonal.png
-│       └── extremes.png
+│       ├── extremes.png
+|       └── correlation.png
 │
 ├── README.md                     
 ├── requirements.txt             
